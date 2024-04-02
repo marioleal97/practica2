@@ -1,0 +1,296 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+  }
+body {
+    background-image: url('https://th.bing.com/th/id/R.c9d68f5f70294bbb0f58248dc60c4675?rik=G7rii7GPZbdrng&riu=http%3a%2f%2f2.bp.blogspot.com%2f-KIM1ZWO7dAI%2fTnyuP_pBAdI%2fAAAAAAAAQFE%2f3mcRV3rbjSQ%2fs1600%2fPaisaje_Sydney_Australia.jpg&ehk=g8bOtec5GyUErrJjfsxJpfqpyHCQtWp%2fYCZpb9%2bxuRM%3d&risl=&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 150px;
+}
+
+/*Estilos del header*/
+
+.header {
+    color: #0c216a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-align: center;
+    display:list-item;
+    padding: 15px;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-image: url('https://th.bing.com/th/id/R.c9d68f5f70294bbb0f58248dc60c4675?rik=G7rii7GPZbdrng&riu=http%3a%2f%2f2.bp.blogspot.com%2f-KIM1ZWO7dAI%2fTnyuP_pBAdI%2fAAAAAAAAQFE%2f3mcRV3rbjSQ%2fs1600%2fPaisaje_Sydney_Australia.jpg&ehk=g8bOtec5GyUErrJjfsxJpfqpyHCQtWp%2fYCZpb9%2bxuRM%3d&risl=&pid=ImgRaw&r=0');
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow:hidden;
+    justify-content:space-between;
+    z-index: 4;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 5px;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+.nav-list li:hover {
+    transform: translate3d(3px,5px,1px);
+    -webkit-transform: translate3d(3px,5px,1px);
+    -moz-transform: translate3d(3px,5px,1px);
+    -ms-transform: translate3d(3px,5px,1px);
+    -o-transform: translate3d(3px,5px,1px);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 50px;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+.header:hover h1 {
+    transform: translateY(-10px);
+    color: #5e0878ac;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content:space-around;
+}
+
+.header li {
+    margin: 0 10px;
+}
+
+.header a {
+    color: rgb(18, 80, 250);
+    text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.header a:hover {
+    font-style:oblique;
+    font-family:fantasy ;
+    color: #410751d1;
+}
+aside {
+    width: 150px;
+    height: 400px;
+    position: fixed;
+    border-radius: 10%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #a9727262;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+aside a {
+    display:list-item;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /*Añadeunatransiciónalcambiarelfondoalpasarelratón*/;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+aside a:hover {
+    background-color: #444444af; /* Cambia el color de fondo al pasar el ratón */
+    color: #ffffff;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    padding: 5px 10px; /* Añade un poco de espacio alrededor de los elementos de la lista */
+}
+
+/*Estilos para la seccion de informacion */
+section {
+    box-shadow: 0 10px 10px #d791a2;
+    background-color: rgba(140, 92, 138, 0.411);
+    margin-left: 200px;
+    margin-right: 40px;
+    padding: 20px;
+}
+.info{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+}
+.info p{
+    margin: 30px;
+    text-align: justify;
+    font-style: oblique;
+}
+.info h2{
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: #0c216a;
+    
+}
+summary {
+    cursor: pointer;
+}
+
+/*Estilos para la seccion de destinos */
+.sites {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.site {
+    position: absolute;
+    width: calc(100% / 2 - 300px);
+    height: calc(100% / 3 - 100px);
+    overflow: hidden;
+}
+
+
+.site:nth-child(1) {
+    top: 40%;
+    left: 50px;
+    border-radius: 10px;
+}
+
+.site:nth-child(2) {
+    bottom: 10%;
+    right: 200px;
+    border-radius: 10px;
+    transform: rotate(-30deg);
+}
+
+.site:nth-child(3) {
+    top: 130px;
+    left: 800px;
+    border-radius: 10px;
+    transform: rotate(30deg);
+}
+
+.site:nth-child(4) {
+    top: 40%;
+    right: 50px;
+    border-radius: 10px;
+}
+
+.site:nth-child(5) {
+    top: 10%;
+    left: 350px;
+    border-radius: 10px;
+    transform: rotate(-20deg);
+}
+
+.site:nth-child(6) {
+    bottom: 10%;
+    left:300px;
+    border-radius: 10px;
+    transform: rotate(30deg);
+}
+.site:nth-child(7) {
+    top: 40%;
+    left: 30%;
+    border-radius: 10px;
+}
+
+.site img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+    transition: transform .5s ease;
+}
+
+.site:hover img {
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.site:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.overlay p {
+    color: #fff;
+    font-size: .9rem;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
